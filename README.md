@@ -1,50 +1,33 @@
-# Welcome to your Expo app 👋
-
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
-
-## Get started
-
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Instrucciones de Uso
+1. Requisitos Previos:
+ - Node.js: Asegúrate de tener Node.js instalado. Puedes descargarlo
+desde https://nodejs.org.
+ - Expo CLI: Si no tienes Expo CLI instalado, puedes hacerlo ejecutando
+el siguiente comando:
+ npm install -g expo-cli
+2. Pasos para Ejecutar la Aplicación:
+ - Descomprime el archivo RAR que has recibido.
+ - Abre una terminal en la carpeta donde descomprimiste el proyecto.
+ - Instalar las dependencias del proyecto:
+ npm install
+3. Ejecutar la Aplicación con Expo:
+ - Como Clima ya tiene configurada la API Key de OpenWeatherMap, no
+necesitas hacer cambios adicionales en el código.
+ - Para iniciar la aplicación, ejecuta el siguiente comando en la
+terminal:
+ npx expo start
+ - Esto abrirá una nueva ventana en tu navegador con un QR Code.
+ - Escanea el QR Code con la aplicación Expo Go en tu dispositivo móvil
+para ver la aplicación funcionando en tiempo real.
+ - También puedes ver la aplicación en un emulador o dispositivo físico
+usando las opciones proporcionadas por Expo.
+4. Pantalla Principal:
+ 1. Campo de Entrada: El usuario puede ingresar el nombre de la ciudad
+cuyo clima desea consultar.
+ 2. Botón de Búsqueda: Al hacer clic en este botón, la aplicación
+consulta la API y muestra el clima de la ciudad.
+ 3. Información del Clima: Muestra la temperatura, la humedad y una
+breve descripción del clima.
+ 4. Manejo de Errores: Si se ingresa un nombre de ciudad incorrecto o si
+ocurre un error con la API, la aplicación muestra un mensaje de error
+adecuado.
